@@ -1,0 +1,369 @@
+/*========================================== */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: Microsoft JhengHei;
+  }
+  
+  .clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  #header {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 300px;
+    margin: 0 auto;
+    background-color: #424242;
+  }
+  #header .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1024px;
+    height: 300px;
+    background-color: #424242;
+  }
+  
+  .logo {
+    bottom: 100%;
+    max-width: 100%;
+  }
+  
+  .data p {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 18px;
+    color: #FFD366;
+    line-height: 21px;
+  }
+  .data .height {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+  }
+  .data .weight {
+    background: rgba(255, 255, 255, 0.15);
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    width: 250px;
+    height: 40px;
+  }
+  
+  .default {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #FFD366;
+  }
+  
+  .blue {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #424242;
+    border: 6px solid #31BAF9;
+  }
+  .blue .circular {
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #31BAF9;
+  }
+  .blue .value {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #31BAF9;
+    line-height: 21px;
+  }
+  .blue .bmi {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #31BAF9;
+  }
+  
+  .green {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #424242;
+    border: 6px solid #86D73F;
+  }
+  .green .circular {
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #86D73F;
+  }
+  .green .value {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #86D73F;
+    line-height: 21px;
+  }
+  .green .bmi {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #86D73F;
+  }
+  
+  .orange1 {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #424242;
+    border: 6px solid #FF982D;
+  }
+  .orange1 .circular {
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF982D;
+  }
+  .orange1 .value {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #FF982D;
+    line-height: 21px;
+  }
+  .orange1 .bmi {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #FF982D;
+  }
+  
+  .orange2 {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #424242;
+    border: 6px solid #FF6C02;
+  }
+  .orange2 .circular {
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF6C02;
+  }
+  .orange2 .value {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #FF6C02;
+    line-height: 21px;
+  }
+  .orange2 .bmi {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #FF6C02;
+  }
+  
+  .red {
+    position: relative;
+    border-radius: 50%;
+    width: 120px;
+    height: 120px;
+    background-color: #424242;
+    border: 6px solid #FF1200;
+  }
+  .red .circular {
+    position: absolute;
+    left: 80px;
+    bottom: 0px;
+    width: 30px;
+    height: 30px;
+    border: 3px solid #424242;
+    border-radius: 50%;
+    background-image: url(https://github.com/Jimmywei01/Pratice/blob/master/icons_loop.png?raw=true);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #FF1200;
+  }
+  .red .value {
+    margin-top: 5px;
+    font-family: AppleSystemUIFont;
+    font-size: 32px;
+    color: #FF1200;
+    line-height: 21px;
+  }
+  .red .bmi {
+    margin-top: 4px;
+    font-size: 14px;
+    color: #FF1200;
+  }
+  
+  span {
+    font-size: 24px;
+    color: #424242;
+    position: absolute;
+    box-sizing: border-box;
+    bottom: 42px;
+    left: 28px;
+  }
+  
+  #content {
+    margin-bottom: 50px;
+    display: flex;
+  }
+  #content .container {
+    display: block;
+    margin: 0 auto;
+  }
+  #content .container p {
+    text-align: center;
+    margin: 40px auto;
+    font-size: 24px;
+    font-weight: bolder;
+    color: #424242;
+  }
+  
+  .list {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 0;
+    list-style-type: none;
+  }
+  .list li {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    margin-bottom: 16px;
+    width: 624px;
+    height: 62px;
+    background: #ffffff;
+    box-shadow: 0px 0px 35px rgba(0, 0, 0, 0.3);
+  }
+  .list li:hover {
+    -webkit-transform: translate(-5px, -5px);
+            transform: translate(-5px, -5px);
+    transition: 0.5s;
+    box-shadow: 5px 5px 60px rgba(0, 0, 0, 0.3);
+  }
+  
+  #blue {
+    position: absolute;
+    left: 0;
+    background: #31BAF9;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+    width: 7px;
+    height: 62px;
+  }
+  
+  #green {
+    position: absolute;
+    left: 0;
+    background: #86D73F;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+    width: 7px;
+    height: 62px;
+  }
+  
+  #orange1 {
+    position: absolute;
+    left: 0;
+    background: #FF982D;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+    width: 7px;
+    height: 62px;
+  }
+  
+  #orange2 {
+    position: absolute;
+    left: 0;
+    background: #FF6C02;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+    width: 7px;
+    height: 62px;
+  }
+  
+  #red {
+    position: absolute;
+    left: 0;
+    background: #FF1200;
+    box-shadow: 2px 0 3px 0 rgba(133, 215, 63, 0.29);
+    width: 7px;
+    height: 62px;
+  }
+  
+  .list .status {
+    font-size: 20px;
+    color: #4A4A4A;
+  }
+  .list .box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .list .box .bmiName {
+    margin-right: 7px;
+    font-size: 12px;
+    color: #424242;
+  }
+  .list .box .value {
+    margin-right: 7px;
+    font-size: 22px;
+    color: #424242;
+  }
+  .list .data {
+    font-size: 12px;
+    color: #424242;
+  }
+  .list img {
+    width: 25px;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90px;
+    background: #FFD366;
+  }
+  
